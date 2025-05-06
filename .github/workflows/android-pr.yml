@@ -17,7 +17,8 @@ jobs:
         java-version: 17
         cache: 'gradle'
     - name: Download dependencies
-      run: ./gradlew androidDependencies
+      run: chmod 777 ./gradlew
+           ./gradlew androidDependencies
     - name: Build debug
       run: ./gradlew assembleDebug
     - name: Upload debug APK
