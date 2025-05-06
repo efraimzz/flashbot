@@ -16,9 +16,10 @@ jobs:
         distribution: 'temurin'
         java-version: 17
         cache: 'gradle'
-    - name: Download dependencies
+    - name: permission Download dependencies
       run: chmod 777 ./gradlew
-           ./gradlew androidDependencies
+    - name: Download dependencies
+      run: ./gradlew androidDependencies
     - name: Build debug
       run: ./gradlew assembleDebug
     - name: Upload debug APK
