@@ -42,7 +42,7 @@ public class Push {
 
         stream.write(mode.getBytes());
 
-        byte[] buff = new byte[adbConnection.getMaxData()];
+        byte[] buff = new byte[adbConnection.getMaxData()-1];
         InputStream is = new FileInputStream(local);
 
         long sent = 0;
