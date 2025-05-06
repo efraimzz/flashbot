@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "com.mrkid.myflashbot"
+    namespace = "com.mrkid.flashbot"
     compileSdkVersion 33
     buildToolsVersion "33.0.1"
 
     defaultConfig {
-        applicationId "com.mrkid.myflashbot"
+        applicationId "com.mrkid.flashbot"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
