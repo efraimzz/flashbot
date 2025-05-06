@@ -1,6 +1,5 @@
 package com.mrkid.flashbot;
 
-import com.mrkid.myflashbot.R;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
