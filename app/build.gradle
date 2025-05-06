@@ -21,5 +21,5 @@ android {
 
 dependencies {
     testImplementation 'junit:junit:4.3.12'
-    compile 'com.android.support:appcompat-v7:22.2.1'
+    implementation 'com.android.support:appcompat-v7:22.2.1'
 }
