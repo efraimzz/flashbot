@@ -1,6 +1,5 @@
 package com.mrkid.flashbot;
 
-import com.mrkid.myflashbot.R;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
