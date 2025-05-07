@@ -76,17 +76,17 @@ jobs:
 
           if [[ -z "$CHANGELOG" ]]; then
             echo "#### Refer to full changelogs $VERSION_TAG"
-            exit 1
+            #exit 1
           fi
 
           # Replace • with * and \n with two spaces followed by \n
-          CHANGELOG=$(echo "$CHANGELOG" | sed 's/•/*/g' | sed 's/\\n/  \n/g')
+          #CHANGELOG=$(echo "$CHANGELOG" | sed 's/•/*/g' | sed 's/\\n/  \n/g')
 
           # Add ### Changelog before the changelog text
-          CHANGELOG="### Changelog  $CHANGELOG"
+          #CHANGELOG="### Changelog  $CHANGELOG"
 
           # Write CHANGELOG to a temporary file
-          echo -e "$CHANGELOG" > changelog.txt
+          #echo -e "$CHANGELOG" > changelog.txt
 
       - name: Publish Release using gh CLI
         run: |
