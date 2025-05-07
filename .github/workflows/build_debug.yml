@@ -92,8 +92,8 @@ jobs:
         run: |
           gh release create "${{ github.ref_name }}" \
             "aShellYou-${{ github.ref_name }}-release.apk" \
-            --title "aShell You ${{ github.ref_name }}" \
-            --notes-file changelog.txt
+            --title "aShell You ${{ github.ref_name }}" 
+           
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
